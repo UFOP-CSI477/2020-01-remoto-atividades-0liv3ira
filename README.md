@@ -4,7 +4,7 @@
 
 - Nome: Jhonny Oliveira da Silva
 - Matrícula: 16.1.8332
-- Curso: Engenhari da Computação
+- Curso: Engenharia da Computação
 - Semestre/Ano correntes: 9 período
 - Link para o seu GitHub: https://github.com/0liv3ira
 
