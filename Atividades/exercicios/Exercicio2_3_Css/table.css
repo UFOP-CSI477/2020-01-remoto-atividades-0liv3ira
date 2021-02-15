@@ -1,0 +1,21 @@
+table {
+    width: 100%;
+}
+
+table , th , td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    font-size: 20px;
+    font-style: italic;
+}
+
+td:hover{
+    background-color: blue;
+}
+
+thead tr:hover {
+    background-color: salmon;
+}

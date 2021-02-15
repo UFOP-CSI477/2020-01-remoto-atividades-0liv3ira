@@ -1,0 +1,15 @@
+label {
+    font-weight: bold;
+}
+
+input[type=text] {
+    background-color: gray;
+}
+
+input[type=password] {
+    background-color: red;
+}
+
+input[type=email] {
+    background-color: blue;
+}
