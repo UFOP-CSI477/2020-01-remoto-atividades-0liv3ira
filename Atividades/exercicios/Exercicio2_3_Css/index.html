@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style type="text/css">
+
+@import url('https://fonts.googleapis.com/css2?family=Ballet&display=swap');
+
+        p {
+            font-family: 'Ballet', cursive;
+            font-size: 40px;
+        }
+
         a {
             color: yellowgreen;
             font-size: 20px;
@@ -12,15 +21,34 @@
             padding: 5px;
         }
 
+        a:hover {
+            color: yellow;
+            font-weight: bold;
+        }
+        a:active{
+            color: violet;
+        }
+        a:visited{
+            color: gray;
+        }
         .flutuar {
             float: right; background-color: white;
+            margin: 20px;
+            padding: 20px;
         }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            flex-wrap: wrap;            
+        } 
 
     </style>
 </head>
 <body style="background-color : black;">
     <nav>
-        <div class="flutuar">
+        <div class="flex">
             <a href="#">Home</a>
             <a href="#">Pessoas</a>
             <a href="#">Estados</a>
@@ -32,5 +60,9 @@
             <a href="#">Sair</a>
         </div>
     </nav>
+    <div class="flutuar">
+        <p> Este é um simples teste de fonte</p>
+    </div>
+    
 </body>
 </html>
