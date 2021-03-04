@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+
+        <script>
+        
+        'use strict'
+
+        function Pessoa(nome, endereco, idade){
+                this.nome=nome;
+                this.endereco=endereco;
+                this.idade=idade;
+            }
+
+        function carregarDados2() {
+
+            const nome = window.prompt('Insira seu nome:');
+            const idade = window.prompt('Insira a sua idade');
+            const endereco = window.prompt("Insira seu endereco");
+
+            const pessoa = new Pessoa(nome, endereco,idade);
+
+            document.getElementById("idade").innerHTML = pessoa.idade;
+            document.getElementById("nome").innerHTML = pessoa.nome;
+            document.getElementById("endereco").innerHTML = pessoa.endereco;
+
+        }
+
+        </script>
+
+
+</head>
+
+<body>  
+
+            <div id="dados">
+                <p>Dados</p>
+                <div id="nome"></div>
+                <div id="endereco"></div>
+                <div id="idade"></div>
+
+            </div>
+
+            <input type="button" value="Carregar dados" onclick="carregarDados2()">
+
+</body>
+
+
+</html>
