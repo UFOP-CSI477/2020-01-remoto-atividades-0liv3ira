@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<title> Contador </title>
+
+<script>
+
+    let hora = new Date();
+    let id ;
+    let control = false
+
+    function horas() {
+        document.getElementById("data").innerHTML = hora;
+        hora = new Date();
+    }
+
+    function iniciar() {
+        if(!control){
+        id = setInterval(horas);
+        control = true;
+        }
+    }
+
+    function parar() {
+        clearInterval(id);
+        control = false;
+    }
+
+</script>
+
+</head>
+
+<body>
+
+    <div id="data" style="border: 2px solid red;"></div>
+
+    <input type="button" class="btn btn-primary" value="Iniciar" onclick="iniciar()">
+
+    <input type="button" class="btn btn-danger" value="Parar" onclick="parar()">
+
+
+</body>
+
+</html>
