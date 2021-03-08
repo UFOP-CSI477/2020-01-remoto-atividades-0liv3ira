@@ -27,7 +27,7 @@ function carregaDados() {
 
     let nome = recuperaNome();
 
-    if(nome != "" && nome.error){ 
+    if(nome != ""){ 
     fetch(`https://servicodados.ibge.gov.br/api/v2/censos/nomes/${nome}`)
     .then(response => response.json())
     .then(data => preencherResultados(data))
